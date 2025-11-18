@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Fidel Iranzi - Web Developer & Mobile App Developer specializing in modern web applications">
+    <title>Fidel Iranzi - Web & Mobile Developer</title>
+    <link rel="stylesheet" href="styles.css?v=4">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h2><i class="fas fa-code"></i> Fidel Iranzi</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="btn-download" id="downloadResume">
+                    <i class="fas fa-download"></i> Resume
+                </button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas id="particles"></canvas>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-avatar animate__animated animate__fadeIn">
+                    <div class="avatar-circle">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                </div>
+                <h1 class="hero-title animate__animated animate__fadeInUp">Hi, I'm <span class="highlight typing-text">Fidel Iranzi</span></h1>
+                <p class="hero-subtitle animate__animated animate__fadeInUp animate__delay-1s">
+                    <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+                </p>
+                <p class="hero-description animate__animated animate__fadeInUp animate__delay-2s">
+                    Crafting innovative digital solutions with expertise in frontend development, 
+                    mobile applications, and modern web technologies.
+                </p>
+                <div class="hero-buttons animate__animated animate__fadeInUp animate__delay-3s">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-briefcase"></i> View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-paper-plane"></i> Get In Touch
+                    </a>
+                </div>
+                <div class="scroll-indicator animate__animated animate__bounce animate__infinite">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate frontend developer and UI/UX designer based in Rwanda, 
+                        specializing in creating elegant, user-friendly digital experiences. 
+                        With expertise in React, Vue.js, and Figma, I transform designs into 
+                        pixel-perfect, responsive web applications.
+                    </p>
+                    <p>
+                        I bridge the gap between design and development, crafting beautiful interfaces 
+                        that not only look great but provide seamless user experiences. From wireframes 
+                        to production-ready code, I bring designs to life with attention to detail.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Rwanda Project -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <div class="project-links">
+                            <button class="project-link" title="View Details">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Rwanda Digital Solutions</h3>
+                        <p class="project-description">
+                            Designed and developed innovative web applications for Rwanda's digital transformation. 
+                            Complete design-to-code workflow from Figma prototypes to production websites.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Figma</span>
+                            <span class="tag">React</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">UI/UX</span>
+                        </div>
+                        <div class="project-stats">
+                            <span><i class="fas fa-star"></i> Featured</span>
+                            <span><i class="fas fa-calendar"></i> 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SpplyPlus Project -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-links">
+                            <button class="project-link" title="View Details">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>SpplyPlus - Frontend Development</h3>
+                        <p class="project-description">
+                            Designed in Figma and developed the complete frontend for SpplyPlus, 
+                            implementing modern UI/UX designs with pixel-perfect precision across all devices.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Figma</span>
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Responsive Design</span>
+                        </div>
+                        <div class="project-stats">
+                            <span><i class="fas fa-code"></i> Production</span>
+                            <span><i class="fas fa-calendar"></i> 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Agriculture Management System -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="project-links">
+                            <button class="project-link" title="View Details">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Agriculture Management System</h3>
+                        <p class="project-description">
+                            Designed interactive dashboard UI in Figma and built responsive frontend for tracking 
+                            crops, sales, and farm inputs with beautiful data visualizations and intuitive UX.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Figma</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Chart.js</span>
+                            <span class="tag">Tailwind CSS</span>
+                        </div>
+                        <div class="project-stats">
+                            <span><i class="fas fa-seedling"></i> Concept</span>
+                            <span><i class="fas fa-calendar"></i> 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Virtual Assistant Toolkit -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-links">
+                            <button class="project-link" title="View Details">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Virtual Assistant Toolkit</h3>
+                        <p class="project-description">
+                            Sample toolkit showcasing advanced scheduling capabilities, automated email handling, 
+                            and productivity tools to streamline daily workflows.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">API Integration</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                        <div class="project-stats">
+                            <span><i class="fas fa-flask"></i> Sample</span>
+                            <span><i class="fas fa-calendar"></i> 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-palette"></i> UI/UX Design</h3>
+                    <ul>
+                        <li>Figma (Prototyping & Design Systems)</li>
+                        <li>Wireframing & User Flows</li>
+                        <li>Component Libraries</li>
+                        <li>Design Tokens & Variables</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Frontend Development</h3>
+                    <ul>
+                        <li>HTML5, CSS3, JavaScript (ES6+)</li>
+                        <li>React.js, Vue.js, TypeScript</li>
+                        <li>Tailwind CSS, SCSS</li>
+                        <li>Responsive Design & Animations</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-mobile-alt"></i> Mobile & Frameworks</h3>
+                    <ul>
+                        <li>React Native</li>
+                        <li>Next.js, Vite</li>
+                        <li>Progressive Web Apps</li>
+                        <li>Mobile-First Design</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Workflow</h3>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>Figma Plugins & Auto Layout</li>
+                        <li>npm, Webpack, Vite</li>
+                        <li>Chrome DevTools</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-subtitle">
+                Interested in working together or have a project in mind? Let's connect!
+            </p>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <a href="mailto:fideliranzii@gmail.com">fideliranzii@gmail.com</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <a href="https://wa.me/250785139833" target="_blank">+250 785 139 833</a>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Fidel Iranzi. All rights reserved.</p>
+            <p>Built with passion in Rwanda 🇷🇼</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader">
+            <div class="spinner"></div>
+            <p>Loading Portfolio...</p>
+        </div>
+    </div>
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>
