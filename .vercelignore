@@ -1,6 +1,11 @@
-node_modules
-src
-dist
+node_modules/
+src/
+dist/
+.git/
 *.ts
 tsconfig.json
 compile.js
+script.js
+README.md
+package.json
+package-lock.json
