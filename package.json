@@ -4,7 +4,7 @@
   "description": "Professional portfolio website for Fidel Iranzi - Web & Mobile Developer",
   "main": "dist/app.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && node compile.js",
     "watch": "tsc --watch",
     "dev": "tsc --watch & live-server",
     "compile": "tsc && node compile.js"
