@@ -1,0 +1,6 @@
+# Vercel deployment
+.vercel
+
+# Build output
+public/
+dist/

@@ -1,6 +1,4 @@
 {
-  "buildCommand": "npm run compile",
-  "outputDirectory": ".",
-  "installCommand": "npm install",
-  "framework": null
+  "buildCommand": "npm run build",
+  "outputDirectory": "public"
 }

@@ -4,8 +4,14 @@ const path = require('path');
 
 const distDir = './dist';
 const targetDir = './';
+const publicDir = './public';
 
-// Copy compiled files
+// Create public directory
+if (!fs.existsSync(publicDir)) {
+    fs.mkdirSync(publicDir);
+}
+
+// Copy compiled files to root
 if (fs.existsSync(distDir)) {
     const files = fs.readdirSync(distDir);
     files.forEach(file => {
@@ -16,7 +22,25 @@ if (fs.existsSync(distDir)) {
             console.log(`Copied ${file} to root directory`);
         }
     });
-    console.log('✓ Compilation complete!');
-} else {
-    console.error('dist directory not found. Run "npm run build" first.');
 }
+
+// Copy necessary files to public directory
+const filesToCopy = [
+    'index.html',
+    'styles.css',
+    'app.js',
+    'particles.js',
+    'theme.js',
+    'typing.js',
+    'resume.js',
+    'animations.js'
+];
+
+filesToCopy.forEach(file => {
+    if (fs.existsSync(file)) {
+        fs.copyFileSync(file, path.join(publicDir, file));
+        console.log(`Copied ${file} to public directory`);
+    }
+});
+
+console.log('✓ Compilation complete!');
